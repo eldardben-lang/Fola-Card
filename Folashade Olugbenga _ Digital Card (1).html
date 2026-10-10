@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Folashade Olugbenga | Customer Relations Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0c0b0a;--panel:#161412;--gold:#d4a84b;--gold2:#f0d28a;--paper:#f6f1e7;--muted:#b9b1a2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--ink)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:Figtree,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.5}
+.wrap{max-width:460px;margin:0 auto;padding:0 20px 40px}
+.hero{padding:44px 0 28px;border-bottom:1px solid #2c2720}
+.mono{font-family:"Cormorant Garamond",Georgia,serif;font-size:64px;font-weight:600;font-style:italic;line-height:1;background:linear-gradient(135deg,var(--gold2),var(--gold) 60%,#a77d2c);-webkit-background-clip:text;background-clip:text;color:transparent;margin:0 0 14px}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:36px;line-height:1.05;letter-spacing:.02em;margin:0;color:var(--gold2)}
+.role{margin:8px 0 14px;font-size:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{font-size:13px;border:1px solid #4a3d1f;color:var(--gold2);padding:4px 12px;border-radius:99px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0 10px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:10px;border:1px solid #4a3d1f;background:var(--panel);color:var(--paper);font:500 15px Figtree,sans-serif;text-decoration:none;cursor:pointer}
+.btn.primary{grid-column:1/-1;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1305;border:0;font-weight:600;font-size:16px}
+.btn:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
+.btn:active{transform:scale(.98)}
+#fallback{display:none;margin:8px 0 0;padding:12px;border-radius:10px;background:var(--panel);font-size:13px;color:var(--muted)}
+#fallback pre{white-space:pre-wrap;word-break:break-word;margin:8px 0 0;color:var(--paper);font-family:inherit}
+.info{margin:22px 0;display:grid;gap:12px}
+.info a,.info div{display:flex;gap:14px;align-items:center;color:var(--paper);text-decoration:none;word-break:break-all}
+.ico{flex:none;width:38px;height:38px;border-radius:50%;background:var(--gold);color:#1a1305;display:grid;place-items:center}
+.ico svg{width:18px;height:18px;fill:currentColor}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;color:var(--gold2);margin:34px 0 12px}
+.services{list-style:none;margin:0;padding:0;border-left:2px solid var(--gold)}
+.services li{padding:11px 0 11px 16px;border-bottom:1px solid #26221c}
+.services li:last-child{border-bottom:0}
+.focus{background:var(--paper);color:#1d2433;border-radius:14px;padding:22px;margin-top:34px}
+.focus p{margin:0 0 14px;font-size:17px}
+.sig{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:24px;color:#9a6a1a;margin:0}
+.qr{display:flex;gap:16px;align-items:center;margin-top:34px;padding-top:24px;border-top:1px solid #2c2720}
+#qrbox{background:#fff;padding:8px;border-radius:8px;flex:none;width:116px;height:116px}
+#qrbox img,#qrbox canvas{width:100%!important;height:100%!important}
+.qr p{margin:0;color:var(--muted);font-size:14px}
+@media (prefers-reduced-motion:no-preference){.hero{animation:in .6s ease-out both}@keyframes in{from{opacity:0;transform:translateY(8px)}}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+<p class="mono" aria-hidden="true">FA</p>
+<h1>Folashade Olugbenga</h1>
+<p class="role">Customer Relations Manager</p>
+<ul class="tags"><li>CRM</li><li>Client Relations</li><li>Real Estate</li><li>Property Advisory</li></ul>
+<div class="actions">
+<button class="btn primary" id="save" type="button">Save to contacts</button>
+<a class="btn" href="tel:+2348160739418">Call</a>
+<a class="btn" href="https://wa.me/2348160739418">WhatsApp</a>
+<a class="btn" href="mailto:folashadezekiouse418@gmail.com">Email</a>
+<button class="btn" id="share" type="button">Share card</button>
+</div>
+<div id="fallback"><span>Your browser blocked the download. Copy these details into a new contact:</span><pre id="vtext"></pre></div>
+</header>
+
+<section class="info" aria-label="Contact details">
+<a href="tel:+2348160739418"><span class="ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.5.56 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.25 1z"/></svg></span>0816 073 9418</a>
+<a href="mailto:folashadezekiouse418@gmail.com"><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.5 7v.2L12 13l7.5-5.8V7z"/></svg></span>folashadezekiouse418@gmail.com</a>
+<div><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></span>Abuja, Nigeria</div>
+</section>
+
+<section>
+<h2>What I do</h2>
+<ul class="services">
+<li>Customer Relationship Management</li>
+<li>Client Experience &amp; Retention</li>
+<li>Real Estate Sales &amp; Property Advisory</li>
+<li>Client Documentation &amp; Follow-up</li>
+<li>CRM &amp; Data Analysis</li>
+<li>Property Finishing &amp; Interior Coordination</li>
+</ul>
+</section>
+
+<section class="focus">
+<p>Building stronger client relationships, improving customer experience, and connecting people with the right property solutions.</p>
+<p class="sig">Relationships. Properties. Experience. Results.</p>
+</section>
+
+<section class="qr">
+<div id="qrbox" aria-label="QR code for this card"></div>
+<p>Let someone scan this to open the card on their phone.</p>
+</section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+var VCARD=["BEGIN:VCARD","VERSION:3.0","N:Olugbenga;Folashade;;;","FN:Folashade Olugbenga","TITLE:Customer Relations Manager","TEL;TYPE=CELL:+2348160739418","EMAIL:folashadezekiouse418@gmail.com","ADR;TYPE=WORK:;;;Abuja;;;Nigeria","NOTE:CRM | Client Relations | Real Estate | Property Advisory","END:VCARD"].join("\r\n");
+document.getElementById("save").addEventListener("click",function(){
+  var ok=false;
+  try{
+    var b=new Blob([VCARD],{type:"text/vcard"});
+    var a=document.createElement("a");
+    a.href=URL.createObjectURL(b);a.download="Folashade-Olugbenga.vcf";
+    document.body.appendChild(a);a.click();a.remove();ok=true;
+  }catch(e){}
+  setTimeout(function(){
+    document.getElementById("vtext").textContent="Folashade Olugbenga\nCustomer Relations Manager\n08160739418\nfolashadezekiouse418@gmail.com\nAbuja, Nigeria";
+    document.getElementById("fallback").style.display="block";
+  },ok?1200:0);
+});
+document.getElementById("share").addEventListener("click",function(){
+  var url=location.href;
+  if(navigator.share){navigator.share({title:"Folashade Olugbenga",url:url}).catch(function(){});}
+  else if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){document.getElementById("share").textContent="Link copied"}).catch(function(){});}
+});
+try{new QRCode(document.getElementById("qrbox"),{text:location.href,width:200,height:200,colorDark:"#0c0b0a",colorLight:"#ffffff"});}catch(e){}
+</script>
+</body>
+</html>
